@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="loan-calculator">
+        <h2>Loan Calculator</h2>
+        <form>
+            <div class="form-group">
+                <label for="loan-amount">Loan Amount:</label>
+                <input type="number" id="loan-amount" name="loan-amount" required>
+            </div>
+            <div class="form-group">
+                <label for="interest-rate">Interest Rate:</label>
+                <input type="number" id="interest-rate" name="interest-rate" required>
+            </div>
+            <div class="form-group">
+                <label for="loan-term">Loan Term (in months):</label>
+                <input type="number" id="loan-term" name="loan-term" required>
+            </div>
+            <button class="btn" type="button" onclick="calculateLoan()">Calculate</button>
+        </form>
+        <div class="payment-schedule">
+            <h3>Payment Schedule</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Payment No.</th>
+                        <th>Payment Due Date</th>
+                        <th>Payment Amount</th>
+                        <th>Principal Amount</th>
+                        <th>Interest Amount</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody id="payment-schedule-table"></tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
